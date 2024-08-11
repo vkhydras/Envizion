@@ -1,0 +1,19 @@
+version: "0.1"
+
+flow:
+  extract_pdf_text:
+    action: extract_pdf_text
+    file:
+      var: cv_filepath
+
+  extract_personal_info:
+    action: extract_personal_info
+    text:
+      var: extracted_text
+
+  anonymize_text:
+    action: anonymize_text
+    text:
+      var: extracted_text
+    personal_info:
+      var: personal_info

@@ -1,0 +1,2 @@
+[tool.poetry.plugins."aijson"]
+actions = "my_package.actions"
